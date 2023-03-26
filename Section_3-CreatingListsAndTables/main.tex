@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumerate}
+
+\title{Commands Vs. Environments}
+\author{Eirik and Stine}
+\date{September 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+    This is an abstract.
+\end{abstract}
+\section{Name of section}
+Some text \footnote[2]{This is a footnote}
+
+\begin{itemize}
+    \item[-] test
+    \item test
+    \item test
+    \begin{itemize}
+        \item flour
+        \item flour
+        \item flour
+        \begin{itemize}
+            \item a
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+\begin{enumerate}[i.]
+    \item test
+    \item test
+    \item test
+    \begin{enumerate}
+        \item test
+        \item test
+        \item test
+    \end{enumerate}
+\end{enumerate}
+
+some text above
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|r|c|l|}
+\hline
+First column & Second column & Third column \\\hline\hline
+Second row & second row & second row \\
+\end{tabular}
+\caption{Here is my table}
+\end{table}
+
+some text below
+
+\end{document}
